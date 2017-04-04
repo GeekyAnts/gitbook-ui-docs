@@ -1,11 +1,18 @@
 {
     "plugins": [
         "ga",
-        "versions"
+        "versions",
+        "scripts"
     ],
     "title": "NativeBase Market UI Themes",
     "pluginsConfig": {
+        "scripts": {
+            "files": [
+                "./engine.js"
+            ]
+        },
         "versions": {
+
             "gitbookConfigURL": "http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json",
             "options": [
                 {
