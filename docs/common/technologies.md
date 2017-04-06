@@ -4,9 +4,8 @@ The components of the App are built using the core components of [React Native](
 The theme also constantly incorporates various other latest technologies.
 
 * React Native
-* NativeBase
+* NativeBase v2.x
 * Redux
-* CodePush
 * React Native Router Flux
 * React Native Easy Grid
 
@@ -35,9 +34,6 @@ Redux attempts to make state mutations predictable by imposing certain restricti
   * The only way to mutate the state is to emit an action, an object describing what happened.
   * To specify how the state tree is transformed by actions, you write pure reducers.
 
-##[CodePush](https://github.com/Microsoft/react-native-code-push)
-[React Native](https://github.com/facebook/react-native) app is composed of JavaScript files, images, which are bundled together by the packager and distributed as part of a platform-specific binary (i.e. an .ipa or .apk file). Once the app is released, updating either the JavaScript code or image assets, requires you to recompile and redistribute the entire binary.
-The CodePush plugin helps get product improvements in front of your end users instantly, with the aid of preserving your javascript and images synchronized with updates you launch to the CodePush server. This way, your app gets the benefits of an offline mobile experience, as well as the "web-like" agility of side-loading updates as soon as they are available.
 
 ##[React Native Easy Grid](https://github.com/GeekyAnts/react-native-easy-grid)
 [React Native Easy Grid](https://github.com/GeekyAnts/react-native-easy-grid) is an open source package for grid layout from the team of [StrapMobile](https://strapmobile.com/). The layout system is an essential concept that needs to be mastered in order to create great layouts and UIs. [React Native](https://github.com/facebook/react-native) uses Flexbox to create the layouts, which is great when we need to accommodate our components and views in different screen sizes or even different devices. Flexbox is awesome but it could be tiresome for newbies.

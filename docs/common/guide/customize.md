@@ -11,7 +11,7 @@ Customizing the App will be a cakewalk for you. That is due to the fact, we prov
 # Change Components Color
 
 To customize any component of the App is very easy now.
-Follow the [NativeBase ](http://nativebase.io/docs/v2.0.0/customize#) procedure to do so.
+Follow the [NativeBase ](http://docs.nativebase.io/CUSTOMIZE.html#Customize) procedure to do so.
 
 # Change App Icon
 

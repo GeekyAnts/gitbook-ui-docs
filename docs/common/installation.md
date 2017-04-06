@@ -1,15 +1,4 @@
 
-###System Requirements
-
-* Globally installed [node](https://nodejs.org/en/) >= 4.0
-* Globally installed [npm](https://www.npmjs.com/) >= 3.0
-* Globally installed [react-native CLI](https://facebook.github.io/react-native/docs/getting-started.html)
-
-### Full Version
-
-Run the following commands on your terminal to setup the App on your system.
-
-
 ### Installation
 
 * **Opt #1. Download ZIP**
@@ -27,16 +16,21 @@ To setup the Full Version for the App on your system, with **gitstrap** tools to
 ```
 cd App
 npm install
-react-native link
+or
+yarn
 ```
 
 * To simulate for iOS
   * **Method One:**
-    * Open the project in XCode from ``` ios/App.xcodeproj```.
-    * Hit Build button to simulate.
+    * Run ``` npm start ``` in your terminal.
+    * Scan the QR code in your Expo App.
   * **Method Two:**
-    * Type ``` react-native run-ios ``` in your terminal.
+    * Type ``` npm run ios ``` in your terminal.
 
 * To simulate for Android
+* **Method One:**
+  * Run ``` npm start ``` in your terminal.
+  * Scan the QR code in your Expo App.
+  * **Method Two:**
   * Make sure you have an ``` Android emulator ``` installed and running.
-  * Type ``` react-native run-android ``` in your terminal.
+  * Type ``` npm run android ``` in your terminal.

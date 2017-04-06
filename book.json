@@ -5,12 +5,15 @@
         "scripts"
     ],
     "title": "NativeBase Market UI Themes",
+    "variables":{
+      "options": "react-native-flat-app-theme"
+       },
     "pluginsConfig": {
-        "scripts": {
-            "files": [
-                "./engine.js"
-            ]
-        },
+      "scripts": {
+          "files": [
+              "./engine.js"
+          ]
+      },
         "versions": {
 
             "gitbookConfigURL": "http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json",
