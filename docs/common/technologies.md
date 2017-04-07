@@ -1,4 +1,4 @@
-## Technologies Used
+# Technologies Used
 
 The components of the App are built using the core components of [React Native](https://github.com/facebook/react-native) and [NativeBase](http://nativebase.io/).
 The theme also constantly incorporates various other latest technologies.

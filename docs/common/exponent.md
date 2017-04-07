@@ -1,4 +1,3 @@
-
 # Exponent
 
 With the newer version of the App, we now provide support for [Exponent](https://getexponent.com/).  
