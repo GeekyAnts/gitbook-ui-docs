@@ -15,52 +15,16 @@ Follow the [NativeBase ](http://docs.nativebase.io/CUSTOMIZE.html#Customize) pro
 
 # Change App Icon
 
-Want to have your own icon for your app? This is very simple with the App.
-Follow below given steps to customize app-icon for your app.
-
-* Visit [MakeAppIcon](https://makeappicon.com/) website
-* Enter the image of your choice to get logo of various dimensions
-* **For iOS:**
-
-    You should upload iOS icons to /ios/App/Images.xcassets/AppIcon.appiconset/
-* **For Android:**
-
-    * You should upload Android icons along with the folders named as:
-        * mipmap-hdpi
-        * mipmap-mdpi
-        * mipmap-xhdpi
-        * mipmap-xxhdpi
-    * Upload these folders to /android/app/src/main/res/
-* Restart packager and rebuild your app.
+With [CRNA](https://github.com/facebook/react-native) Changing the app icon is much easier than the usual React Native App. You just need to give local path or remote url of an image you want to use as app icon to the **[icon](https://docs.expo.io/versions/v15.0.0/guides/configuration.html#icon)** attribute in app.json.
 
 
 
 # Rename App
 
-Renaming any [React Native](https://github.com/facebook/react-native) app is strenous. But the App proves its flexibility for this approach.
-Follow below given steps to rename your app.
-
-* Rename the app name in following files.
-    * package.json
-    * index.ios.js
-    * index.android.js
-* This process wipes out the **launchscreen** **and app** icon from your app. Hence you can restore them before moving ahead.
-
-    **iOS:** Restore ```ios/App/Images.xcassets```<br />
-    **Android:** Restore ```/android/app/src/main/res```
-* Delete the **iOS** and **android** directories from your project.
-* Run following commands on your terminal:
-```  
-react-native upgrade
-react-native android
-react-native link
-```
-
-* Overwrite all the files if it prompts.
-* Repeat CodePush deployment if you want to include it in your app.
-* Try simulating now.
+Renaming any [Create React Native App](https://github.com/facebook/react-native) is very easier.
+You just need to rename **[name](https://docs.expo.io/versions/v15.0.0/guides/configuration.html#name)** attribute in package.json.
 
 
+# Changing the URL name for publishing with Expo
 
-
-_To be updated soon . . ._
+* To change the App name for the Expo url, you just need to rename the **[slug](https://docs.expo.io/versions/v15.0.0/guides/configuration.html#slug)** attribute in app.json file.

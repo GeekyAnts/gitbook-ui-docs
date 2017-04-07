@@ -286,54 +286,14 @@
 <p>To customize any component of the App is very easy now.
 Follow the <a href="http://docs.nativebase.io/CUSTOMIZE.html#Customize" target="_blank">NativeBase </a> procedure to do so.</p>
 <h1 id="change-app-icon">Change App Icon</h1>
-<p>Want to have your own icon for your app? This is very simple with the App.
-Follow below given steps to customize app-icon for your app.</p>
-<ul>
-<li>Visit <a href="https://makeappicon.com/" target="_blank">MakeAppIcon</a> website</li>
-<li>Enter the image of your choice to get logo of various dimensions</li>
-<li><p><strong>For iOS:</strong></p>
-<p>  You should upload iOS icons to /ios/App/Images.xcassets/AppIcon.appiconset/</p>
-</li>
-<li><p><strong>For Android:</strong></p>
-<ul>
-<li>You should upload Android icons along with the folders named as:<ul>
-<li>mipmap-hdpi</li>
-<li>mipmap-mdpi</li>
-<li>mipmap-xhdpi</li>
-<li>mipmap-xxhdpi</li>
-</ul>
-</li>
-<li>Upload these folders to /android/app/src/main/res/</li>
-</ul>
-</li>
-<li>Restart packager and rebuild your app.</li>
-</ul>
+<p>With <a href="https://github.com/facebook/react-native" target="_blank">CRNA</a> Changing the app icon is much easier than the usual React Native App. You just need to give local path or remote url of an image you want to use as app icon to the <strong><a href="https://docs.expo.io/versions/v15.0.0/guides/configuration.html#icon" target="_blank">icon</a></strong> attribute in app.json.</p>
 <h1 id="rename-app">Rename App</h1>
-<p>Renaming any <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> app is strenous. But the App proves its flexibility for this approach.
-Follow below given steps to rename your app.</p>
+<p>Renaming any <a href="https://github.com/facebook/react-native" target="_blank">Create React Native App</a> is very easier.
+You just need to rename <strong><a href="https://docs.expo.io/versions/v15.0.0/guides/configuration.html#name" target="_blank">name</a></strong> attribute in package.json.</p>
+<h1 id="changing-the-url-name-for-publishing-with-expo">Changing the URL name for publishing with Expo</h1>
 <ul>
-<li>Rename the app name in following files.<ul>
-<li>package.json</li>
-<li>index.ios.js</li>
-<li>index.android.js</li>
+<li>To change the App name for the Expo url, you just need to rename the <strong><a href="https://docs.expo.io/versions/v15.0.0/guides/configuration.html#slug" target="_blank">slug</a></strong> attribute in app.json file.</li>
 </ul>
-</li>
-<li><p>This process wipes out the <strong>launchscreen</strong> <strong>and app</strong> icon from your app. Hence you can restore them before moving ahead.</p>
-<p>  <strong>iOS:</strong> Restore <code>ios/App/Images.xcassets</code><br>
-  <strong>Android:</strong> Restore <code>/android/app/src/main/res</code></p>
-</li>
-<li>Delete the <strong>iOS</strong> and <strong>android</strong> directories from your project.</li>
-<li><p>Run following commands on your terminal:</p>
-<pre><code>react-native upgrade
-react-native android
-react-native link
-</code></pre></li>
-<li><p>Overwrite all the files if it prompts.</p>
-</li>
-<li>Repeat CodePush deployment if you want to include it in your app.</li>
-<li>Try simulating now.</li>
-</ul>
-<p><em>To be updated soon . . .</em></p>
 
                                 
                                 </section>
@@ -377,7 +337,7 @@ react-native link
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.5.1","depth":2,"next":{"title":"Packages","level":"1.6","depth":1,"path":"docs/react-native-flat-app-theme/packages.md","ref":"./docs/react-native-flat-app-theme/packages.md","articles":[]},"previous":{"title":"Guide","level":"1.5","depth":1,"path":"docs/common/guide.md","ref":"./docs/common/guide.md","articles":[{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide/customize.md","mtime":"2017-04-06T14:47:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T14:48:35.872Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.5.1","depth":2,"next":{"title":"Packages","level":"1.6","depth":1,"path":"docs/react-native-flat-app-theme/packages.md","ref":"./docs/react-native-flat-app-theme/packages.md","articles":[]},"previous":{"title":"Guide","level":"1.5","depth":1,"path":"docs/common/guide.md","ref":"./docs/common/guide.md","articles":[{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide/customize.md","mtime":"2017-04-07T06:27:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-07T07:10:14.980Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
