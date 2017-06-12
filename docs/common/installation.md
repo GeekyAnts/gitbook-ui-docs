@@ -1,5 +1,10 @@
 
 # Installation
+#### System Requirements:
+
+ * Globally installed [node](https://nodejs.org/en/)>= 6 
+ * Globally installed [npm](https://www.npmjs.com/)>= 3
+
 
 * **Opt #1. Download ZIP**
 
@@ -37,3 +42,5 @@ yarn
   * **Method Two:**
     * Make sure you have an ``` Android emulator ``` installed and running.
     * Type ``` npm run android ``` in your terminal.
+
+
