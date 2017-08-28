@@ -2,12 +2,12 @@
 
 
 - [How to override style in NativeBase?](#override-style)
-- [How do I add events with the components?](#add-events)
-- [None of the above, I have a different error](#none)
+- [How to add events with the components?](#add-events)
 - [How to customize components of NativeBase?](#customize)
 - [I want list of icons with their names used in NativeBase](#list-icons)
 - [How do I extract files in Windows?](#windows-extraction)
 - [How to eject CRNA to get regular React Native app?](#CRNA-ejection)
+- [None of the above, I have a different error](#none)
 
 <br />
 
@@ -23,11 +23,12 @@
     <div class="panel-footer">
         <b> Solution: </b><br />
         <a href="http://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
-        Hence with any component you can pass the style property which will be merged to the default style of that component.<br />
+        Hence with any component you can pass the style property which will be merged to the default style of the same component.<br />
 
         Example:
-        <pre><code class="language-jsx">&lt;Button style=&#123;{backgroundColor: '#FF0000'}}>
-        Click me!&lt;/Button></code></pre>
+<pre><code class="language-jsx">&lt;Button style=&#123;{backgroundColor: '#FF0000'}}>
+  Click me!
+&lt;/Button></code></pre>
     </div>
 </div>
 
@@ -36,22 +37,22 @@
 <br />
 
 <a id="add-events"></a>
-#### How do I add events with the components?
+#### How to add events with the components?
 
 <div id="faq-6" class="panel-collapse collapse">
     <div class="panel-body">
         What events are available for the components?<br />
-        Example buttons, list items etc.
+        For example, buttons etc.
     </div>
     <br />
     <div class="panel-footer">
         <b>Solution:</b> <br />
-        The <a href="http://nativebase.io/">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br />
+        <a href="http://nativebase.io/">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br />
 
-        <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can just use the <code>onPress</code> callback function for event handling.<br /><br />
+        <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can use the <code>onPress</code> callback function for event handling.<br /><br />
 
-        Refer the
-        <a href="">cheatsheet</a>
+        Refer the NativeBase
+        <a href="https://docs.nativebase.io/docs/CheatSheet.html">Cheatsheet</a>
         for more details.
     </div>
 </div>
@@ -60,26 +61,6 @@
 <hr>
 <br />
 
-<a id="none"></a>
-#### None of the above, I have a different error
-
-
-<div id="faq-7" class="panel-collapse collapse">
-    <div class="panel-body">
-        The above listed FAQs were not of your help?<br />
-        Facing some other issues?
-    </div>
-    <br />
-    <div class="panel-footer">
-        <b>Solution:</b> <br />
-        We welcome all your issues. Feel free to raise issues on GitHub.<br />
-        Please go through the <a href="">Git Flow</a> to report issues.
-    </div>
-</div>
-
-<br />
-<hr>
-<br />
 
 <a id="customize"></a>
 #### How to customize components of NativeBase?
@@ -92,7 +73,7 @@
     <div class="panel-footer">
         <b> Solution: </b><br />
         <a href="http://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
-        Go through <a href="http://docs.nativebase.io/CUSTOMIZE.html#Customize">Customize</a> section of docs.
+        Go through <a href="https://docs.nativebase.io/Customize.html#Customize">Customize</a> section of docs.
     </div>
 </div>
 
@@ -105,14 +86,14 @@
 
 <div id="faq-9" class="panel-collapse collapse">
     <div class="panel-body">
-        Docs says <b>Choose from 700+ Icons</b><br />
+        Docs says <i>Choose from 700+ Icons</i><br />
         I want the complete list of icons containing the name and image of the icons that are ready to use.
     </div>
     <br />
     <div class="panel-footer">
         <b> Solution: </b><br />
         NativeBase use Icons from <a href="https://expo.github.io/vector-icons/">React Native Vector Icons</a>.<br />
-        Hence the collection of icons from Vector Icons holds good with that in NativeBase.
+        Hence the collection of icon from Vector Icons hold good with that in NativeBase.
     </div>
 </div>
 
@@ -131,7 +112,7 @@
     <div class="panel-footer">
         <b> Solution: </b><br />
         • Unzip the file.<br />
-        • Right click on the extracted file and select <b>View files</b>.<br />
+        • Right click on the extracted file and select `View files`.<br />
         All the files will be extracted.<br /><br />
 
 
@@ -154,5 +135,29 @@
     <div class="panel-footer">
         <b> Solution: </b><br />
         Ejecting from CRNA to regular React Native app can be performed referring this <a href="https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md">link</a>.
+    </div>
+</div>
+
+
+<br />
+<hr>
+<br />
+
+<a id="none"></a>
+#### None of the above, I have a different error
+
+
+<div id="faq-7" class="panel-collapse collapse">
+    <div class="panel-body">
+        The above listed FAQs were not of your help?<br />
+        Facing some other issues?
+    </div>
+    <br />
+    <div class="panel-footer">
+        <b>Solution:</b> <br />
+        We provide our customers with lively support and welcome all your issues.
+We request you to provide a short description of the visible symptoms of the error that you are facing.
+If applicable, include error messages, screen shots, and stack traces.
+If applicable, submit a step-by-step walkthrough of how to reproduce the issue.
     </div>
 </div>

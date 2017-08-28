@@ -277,12 +277,12 @@
                                 <h1 id="faqs">FAQs</h1>
 <ul>
 <li><a href="#override-style">How to override style in NativeBase?</a></li>
-<li><a href="#add-events">How do I add events with the components?</a></li>
-<li><a href="#none">None of the above, I have a different error</a></li>
+<li><a href="#add-events">How to add events with the components?</a></li>
 <li><a href="#customize">How to customize components of NativeBase?</a></li>
 <li><a href="#list-icons">I want list of icons with their names used in NativeBase</a></li>
 <li><a href="#windows-extraction">How do I extract files in Windows?</a></li>
 <li><a href="#CRNA-ejection">How to eject CRNA to get regular React Native app?</a></li>
+<li><a href="#none">None of the above, I have a different error</a></li>
 </ul>
 <p><br></p>
 <p><a id="override-style"></a></p>
@@ -296,11 +296,12 @@
     <div class="panel-footer">
         <b> Solution: </b><br>
         <a href="http://nativebase.io/" target="_blank">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>.<br>
-        Hence with any component you can pass the style property which will be merged to the default style of that component.<br>
+        Hence with any component you can pass the style property which will be merged to the default style of the same component.<br>
 
         Example:
-        <pre><code class="language-jsx">&lt;Button style={{backgroundColor: <span class="hljs-string">&apos;#FF0000&apos;</span>}}&gt;
-        Click me!<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span></code></pre>
+<pre><code class="language-jsx">&lt;Button style={{backgroundColor: <span class="hljs-string">&apos;#FF0000&apos;</span>}}&gt;
+  Click me!
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span></code></pre>
     </div>
 </div>
 
@@ -308,40 +309,22 @@
 <p><hr>
 <br></p>
 <p><a id="add-events"></a></p>
-<h4 id="how-do-i-add-events-with-the-components">How do I add events with the components?</h4>
+<h4 id="how-to-add-events-with-the-components">How to add events with the components?</h4>
 <div id="faq-6" class="panel-collapse collapse">
     <div class="panel-body">
         What events are available for the components?<br>
-        Example buttons, list items etc.
+        For example, buttons etc.
     </div>
     <br>
     <div class="panel-footer">
         <b>Solution:</b> <br>
-        The <a href="http://nativebase.io/" target="_blank">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br>
+        <a href="http://nativebase.io/" target="_blank">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br>
 
-        <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can just use the <code>onPress</code> callback function for event handling.<br><br>
+        <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can use the <code>onPress</code> callback function for event handling.<br><br>
 
-        Refer the
-        <a href="">cheatsheet</a>
+        Refer the NativeBase
+        <a href="https://docs.nativebase.io/docs/CheatSheet.html" target="_blank">Cheatsheet</a>
         for more details.
-    </div>
-</div>
-
-<p><br></p>
-<p><hr>
-<br></p>
-<p><a id="none"></a></p>
-<h4 id="none-of-the-above-i-have-a-different-error">None of the above, I have a different error</h4>
-<div id="faq-7" class="panel-collapse collapse">
-    <div class="panel-body">
-        The above listed FAQs were not of your help?<br>
-        Facing some other issues?
-    </div>
-    <br>
-    <div class="panel-footer">
-        <b>Solution:</b> <br>
-        We welcome all your issues. Feel free to raise issues on GitHub.<br>
-        Please go through the <a href="">Git Flow</a> to report issues.
     </div>
 </div>
 
@@ -358,7 +341,7 @@
     <div class="panel-footer">
         <b> Solution: </b><br>
         <a href="http://nativebase.io/" target="_blank">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br>
-        Go through <a href="http://docs.nativebase.io/CUSTOMIZE.html#Customize" target="_blank">Customize</a> section of docs.
+        Go through <a href="https://docs.nativebase.io/Customize.html#Customize" target="_blank">Customize</a> section of docs.
     </div>
 </div>
 
@@ -369,14 +352,14 @@
 <h4 id="i-want-list-of-icons-with-their-names-used-in-nativebase">I want list of icons with their names used in NativeBase</h4>
 <div id="faq-9" class="panel-collapse collapse">
     <div class="panel-body">
-        Docs says <b>Choose from 700+ Icons</b><br>
+        Docs says <i>Choose from 700+ Icons</i><br>
         I want the complete list of icons containing the name and image of the icons that are ready to use.
     </div>
     <br>
     <div class="panel-footer">
         <b> Solution: </b><br>
         NativeBase use Icons from <a href="https://expo.github.io/vector-icons/" target="_blank">React Native Vector Icons</a>.<br>
-        Hence the collection of icons from Vector Icons holds good with that in NativeBase.
+        Hence the collection of icon from Vector Icons hold good with that in NativeBase.
     </div>
 </div>
 
@@ -393,7 +376,7 @@
     <div class="panel-footer">
         <b> Solution: </b><br>
         &#x2022; Unzip the file.<br>
-        &#x2022; Right click on the extracted file and select <b>View files</b>.<br>
+        &#x2022; Right click on the extracted file and select `View files`.<br>
         All the files will be extracted.<br><br>
 
 
@@ -414,6 +397,27 @@
     <div class="panel-footer">
         <b> Solution: </b><br>
         Ejecting from CRNA to regular React Native app can be performed referring this <a href="https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md" target="_blank">link</a>.
+    </div>
+</div>
+
+
+<p><br></p>
+<p><hr>
+<br></p>
+<p><a id="none"></a></p>
+<h4 id="none-of-the-above-i-have-a-different-error">None of the above, I have a different error</h4>
+<div id="faq-7" class="panel-collapse collapse">
+    <div class="panel-body">
+        The above listed FAQs were not of your help?<br>
+        Facing some other issues?
+    </div>
+    <br>
+    <div class="panel-footer">
+        <b>Solution:</b> <br>
+        We provide our customers with lively support and welcome all your issues.
+We request you to provide a short description of the visible symptoms of the error that you are facing.
+If applicable, include error messages, screen shots, and stack traces.
+If applicable, submit a step-by-step walkthrough of how to reproduce the issue.
     </div>
 </div>
 
@@ -459,7 +463,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.8","depth":1,"next":{"title":"License","level":"1.9","depth":1,"path":"docs/common/license.md","ref":"./docs/common/license.md","articles":[]},"previous":{"title":"Release Notes","level":"1.7","depth":1,"path":"docs/react-native-flat-app-theme/release-notes.md","ref":"./docs/react-native-flat-app-theme/release-notes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/faqs.md","mtime":"2017-06-12T11:57:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-12T12:26:15.571Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.8","depth":1,"next":{"title":"License","level":"1.9","depth":1,"path":"docs/common/license.md","ref":"./docs/common/license.md","articles":[]},"previous":{"title":"Release Notes","level":"1.7","depth":1,"path":"docs/react-native-flat-app-theme/release-notes.md","ref":"./docs/react-native-flat-app-theme/release-notes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/faqs.md","mtime":"2017-08-24T07:34:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-28T05:05:59.841Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -477,11 +481,15 @@
         
     
         
-        <script src="../../gitbook/gitbook-plugin-scripts/e9dbaf1c6064c2a87758b1b25e6d65e6-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-scripts/0a51e887fa60be214508f6f987d0f4a6-engine.js"></script>
         
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

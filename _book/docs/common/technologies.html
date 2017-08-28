@@ -281,7 +281,7 @@ The theme also constantly incorporates various other latest technologies.</p>
 <li>React Native</li>
 <li>NativeBase v2.x</li>
 <li>Redux</li>
-<li>React Native Router Flux</li>
+<li>React Navigation</li>
 <li>React Native Easy Grid</li>
 </ul>
 <h2 id="react-native"><a href="https://github.com/facebook/react-native" target="_blank">React Native</a></h2>
@@ -308,19 +308,22 @@ Redux attempts to make state mutations predictable by imposing certain restricti
 <li>The only way to mutate the state is to emit an action, an object describing what happened.</li>
 <li>To specify how the state tree is transformed by actions, you write pure reducers.</li>
 </ul>
+<h2 id="react-navigation"><a href="https://reactnavigation.org/" target="_blank">React Navigation</a></h2>
+<p>Navigators allow you to define your application&apos;s navigation structure. Navigators also render common elements such as headers and tab bars which you can configure.</p>
+<ul>
+<li><strong>Stack Navigator</strong><br>
+  Renders one screen at a time and provides transitions between screens. Each new screen is put on the top of the stack and going back removes a screen from the top of the stack.</li>
+<li><strong>Tab Navigator</strong><br>
+  Renders a tab bar with a TabRouter that lets the user switch between several screens</li>
+<li><strong>Drawer Navigator</strong><br>
+  Provides a drawer that slides in from the left of the screen</li>
+</ul>
 <h2 id="react-native-easy-grid"><a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">React Native Easy Grid</a></h2>
 <p><a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">React Native Easy Grid</a> is an open source package for grid layout from the team of <a href="https://strapmobile.com/" target="_blank">StrapMobile</a>. The layout system is an essential concept that needs to be mastered in order to create great layouts and UIs. <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> uses Flexbox to create the layouts, which is great when we need to accommodate our components and views in different screen sizes or even different devices. Flexbox is awesome but it could be tiresome for newbies.
 Easy Grid Library, a wrapper of Flexbox.
 <a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">Easy Grid</a> is very powerful and flexible layout system. No more worries about props of Flexbox such as alignItems, flexDirection, justifyContent, margin, padding, position, width etc. You can create any layout with all the available options that we have. Flexbox makes it look like percentages, however what actually is happening is just ratios. On the easier part, ratios are easier to represent than percentage/decimals. For this reason, the <a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">Easy Grid</a> takes in ratios in place of percentage.
 Performance wise, <a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">Easy Grid</a> is noteworthy and works as fine as Flexbox, not much of calculation.
 <a href="http://nativebase.io/docs/v2.0.0/components#layout" target="_blank">More Examples</a> . . .</p>
-<h2 id="react-native-router-flux"><a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a></h2>
-<p><a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> is a routing package that allows you to:</p>
-<ul>
-<li>Define scene transitions in one central location</li>
-<li>Without having to pass navigator objects around, and allow you to</li>
-<li>Call transitions anywhere in your code with a simple syntax.</li>
-</ul>
 
                                 
                                 </section>
@@ -364,7 +367,7 @@ Performance wise, <a href="https://github.com/GeekyAnts/react-native-easy-grid" 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Technologies","level":"1.2","depth":1,"next":{"title":"Installation","level":"1.3","depth":1,"path":"docs/common/installation.md","ref":"./docs/common/installation.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/technologies.md","mtime":"2017-06-12T07:34:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-12T12:26:15.571Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Technologies","level":"1.2","depth":1,"next":{"title":"Installation","level":"1.3","depth":1,"path":"docs/common/installation.md","ref":"./docs/common/installation.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/technologies.md","mtime":"2017-08-24T04:11:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-28T05:05:59.841Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -382,11 +385,15 @@ Performance wise, <a href="https://github.com/GeekyAnts/react-native-easy-grid" 
         
     
         
-        <script src="../../gitbook/gitbook-plugin-scripts/e9dbaf1c6064c2a87758b1b25e6d65e6-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-scripts/0a51e887fa60be214508f6f987d0f4a6-engine.js"></script>
         
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -275,29 +275,31 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="start-building-your-app">Start Building Your App</h1>
-<p>This App guides you throughout building your app, providing the steps and procedure to customize.</p>
-<p><strong>Contents discussed in this section:</strong></p>
+<p>This App guides you throughout building your app, providing the steps and procedure to customize.<br><br>
+<strong>Contents discussed in this section:</strong></p>
 <ul>
 <li><a href="#new-component">How to add new Component?</a></li>
-<li><a href="#new-styleSheet">How to add new StyleSheet?</a></li>
+<li><a href="#new-styleSheet">How to add new Stylesheet?</a></li>
 </ul>
 <p><a id="new-component"></a></p>
-<h3 id="how-to-add-new-component">How to add new component</h3>
+<h3 id="how-to-add-new-component">How to add new Component</h3>
 <ul>
-<li>Create a new folder, say <code>newComponent</code> and place it under <code>/js/src</code> .</li>
+<li>Create a new folder, say <code>NewComponent</code> and place it under <code>/src/screens/</code>.</li>
 <li>Create a new file <code>index.js</code> , within this folder.</li>
 <li>Name the class same as that of folder name.</li>
 </ul>
 <pre><code>class NewComponent extends Component {
-    ...
+    . . .
+    . . .
 }
 </code></pre><p><a id="new-stylesheet"></a></p>
-<h3 id="how-to-add-new-stylesheet">How to add new styleSheet</h3>
-<p>Create a new file <code>styles.js</code> , place it under <code>/js/src/newComponent</code>.</p>
+<h3 id="how-to-add-new-stylesheet">How to add new Stylesheet</h3>
+<p>Create a new file <code>styles.js</code> , place it under <code>/src/screens/NewComponent/</code>.</p>
 <p><code>import</code> newly created StyleSheet into the Component.</p>
 <pre><code>import styles from &apos;./styles&apos;;
 class NewComponent extends Component {
-    ...
+    . . .
+    . . .
 }
 </code></pre>
                                 
@@ -342,7 +344,7 @@ class NewComponent extends Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Guide","level":"1.5","depth":1,"next":{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]},"previous":{"title":"Exponent","level":"1.4","depth":1,"path":"docs/common/exponent.md","ref":"./docs/common/exponent.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide.md","mtime":"2017-06-12T07:34:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-12T12:26:15.571Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Guide","level":"1.5","depth":1,"next":{"title":"Customize","level":"1.5.1","depth":2,"path":"docs/common/guide/customize.md","ref":"./docs/common/guide/customize.md","articles":[]},"previous":{"title":"Exponent","level":"1.4","depth":1,"path":"docs/common/exponent.md","ref":"./docs/common/exponent.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","versions","scripts","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-91837749-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/SwiggyApp-docs/development/_book/index.html","text":"development"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"latest"},{"value":"http://docs.market.nativebase.io/react-native-food-ordering-app/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/gitbook-ui-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"options":"react-native-flat-app-theme"},"title":"NativeBase Market UI Themes","gitbook":"*"},"file":{"path":"docs/common/guide.md","mtime":"2017-08-24T04:32:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-28T05:05:59.841Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -360,11 +362,15 @@ class NewComponent extends Component {
         
     
         
-        <script src="../../gitbook/gitbook-plugin-scripts/e9dbaf1c6064c2a87758b1b25e6d65e6-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-scripts/0a51e887fa60be214508f6f987d0f4a6-engine.js"></script>
         
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
