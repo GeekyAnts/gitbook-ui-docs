@@ -10,3 +10,4 @@
 * [Release Notes](./docs/react-native-flat-app-theme/release-notes.md)
 * [FAQs](./docs/common/faqs.md)
 * [License](./docs/common/license.md)
+
